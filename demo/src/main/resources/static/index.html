@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Leave Management System</title>
+    <link rel="stylesheet" href="styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+
+<h1>Leave Management</h1>
+
+<form id="leaveForm">
+    <input type="text" id="employeeName" placeholder="Employee Name" required>
+    <input type="text" id="leaveType" placeholder="Leave Type" required>
+    <input type="date" id="startDate" required>
+    <input type="date" id="endDate" required>
+    <button type="submit" class="apply-btn">Apply Leave</button>
+</form>
+
+<h2>All Leave Applications</h2>
+
+<div class="table-wrapper">
+    <table>
+        <thead>
+        <tr>
+            <th>ID</th>
+            <th>Employee</th>
+            <th>Type</th>
+            <th>From</th>
+            <th>To</th>
+            <th>Status</th>
+            <th>Action</th>
+        </tr>
+        </thead>
+        <tbody id="leaveTableBody"></tbody>
+    </table>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
